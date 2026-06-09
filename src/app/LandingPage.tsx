@@ -182,7 +182,7 @@ function HeroSection({ isMobile }: { isMobile: boolean }) {
           <div className="flex flex-col gap-8 w-full items-center">
             {/* Left Content Block */}
             <div className="flex flex-col gap-6 w-full items-center text-center">
-              <div className="w-full max-w-[430px] h-auto">
+              <div className="w-full max-w-[500px]">
                 <Tag text="Xu hướng kinh doanh 2026 • Đá quý kết hợp Huyền học" className="w-full h-auto min-h-[36px] py-2" />
               </div>
               <h3 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold uppercase leading-tight">
@@ -192,15 +192,15 @@ function HeroSection({ isMobile }: { isMobile: boolean }) {
                 Khóa học 0đ giúp bạn hiểu cách luận lá số, thiết kế đá đúng mệnh và mở ra một hướng kinh doanh cá nhân hóa, ít cạnh tranh, lợi nhuận tốt.
               </h5>
               
-              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 w-full max-w-[500px]">
-                <OutlineTag text="Đá quý ứng dụng thực tế" className="w-full sm:w-[239px] h-9" />
-                <OutlineTag text="Nhìn rõ chất đá và năng lượng" className="w-full sm:w-[275px] h-9" />
-                <OutlineTag text="Tư vấn cá nhân hóa theo lá số" className="w-full sm:w-[275px] h-9" />
+              <div className="flex flex-wrap justify-center gap-3 w-full max-w-[560px]">
+                <OutlineTag text="Đá quý ứng dụng thực tế" className="w-full sm:w-auto h-9" />
+                <OutlineTag text="Nhìn rõ chất đá và năng lượng" className="w-full sm:w-auto h-9" />
+                <OutlineTag text="Tư vấn cá nhân hóa theo lá số" className="w-full sm:w-auto h-9" />
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[500px] mt-2">
-                <div className="w-full h-[54px]"><CTAButton text="Đăng ký miễn phí >" tone="gold" /></div>
-                <div className="w-full h-[54px]"><CTAButton text="Xem nội dung khóa học" tone="dark" /></div>
+                <div className="w-full sm:w-1/2 h-[54px]"><CTAButton text="Đăng ký miễn phí >" tone="gold" /></div>
+                <div className="w-full sm:w-1/2 h-[54px]"><CTAButton text="Xem nội dung khóa học" tone="dark" /></div>
               </div>
               
               <h5 className="text-white text-sm sm:text-base font-normal max-w-[485px] mt-2">
@@ -223,10 +223,10 @@ function HeroSection({ isMobile }: { isMobile: boolean }) {
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[520px] justify-center mt-2 items-center">
-                <StatCard label="Thời gian" value="20h00 – 21h30" className="w-[160px]" />
-                <StatCard label="Ngày học" value="11/05/2026" className="w-[160px]" />
-                <StatCard label="Hình thức" value="Học online Zoom" className="w-[160px]" />
+              <div className="flex flex-wrap justify-center gap-3 w-full max-w-[520px] mt-2">
+                <StatCard label="Thời gian" value="20h00 – 21h30" className="w-[140px] sm:w-[160px]" />
+                <StatCard label="Ngày học" value="11/05/2026" className="w-[140px] sm:w-[160px]" />
+                <StatCard label="Hình thức" value="Học online Zoom" className="w-[140px] sm:w-[160px]" />
               </div>
             </div>
           </div>
@@ -274,8 +274,8 @@ function PainSection({ isMobile }: { isMobile: boolean }) {
       <Shell>
         {isMobile ? (
           <div className="flex flex-col gap-6 w-full items-center">
-            <div className="w-[275px] h-9 mx-auto"><Tag text="Bạn không thất bại vì kém giỏi" /></div>
-            <h3 className="text-white text-2xl sm:text-3xl font-bold text-center">Thị trường hiện tại không còn chỗ cho người bán đại trà</h3>
+            <div className="w-full max-w-[275px] mx-auto"><Tag text="Bạn không thất bại vì kém giỏi" /></div>
+            <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold text-center">Thị trường hiện tại không còn chỗ cho người bán đại trà</h3>
             <h5 className="text-white text-base font-normal text-center max-w-[588px]">
               Ai cũng bán, ai cũng giống nhau, ai cũng đua giá. Người thắng trong 2026 là người có chuyên môn riêng và đưa ra giải pháp cá nhân hóa thực sự cho khách hàng
             </h5>
@@ -326,8 +326,8 @@ function OpportunitySection({ isMobile }: { isMobile: boolean }) {
       <Shell>
         {isMobile ? (
           <div className="flex flex-col gap-6 w-full items-center">
-            <div className="w-[275px] h-9 mx-auto"><Tag text="Cơ hội mới cho 2026" /></div>
-            <h3 className="text-white text-2xl sm:text-3xl font-bold text-center uppercase">
+            <div className="w-full max-w-[275px] mx-auto"><Tag text="Cơ hội mới cho 2026" /></div>
+            <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold text-center uppercase">
               Không phải bán đá phong thủy đại trà mà là <span className="text-[rgb(236,_213,_255)]">"thiết kế đá quý theo lá số cá nhân"</span>
             </h3>
             <h5 className="text-white text-base font-normal text-center max-w-[687px]">
@@ -411,14 +411,14 @@ function CourseSection({ isMobile }: { isMobile: boolean }) {
             </div>
 
             {/* 3 Images Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full mt-6">
-              <div className="w-full aspect-[393/562] max-w-[393px] mx-auto overflow-hidden rounded-[0.3125rem]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full mt-6">
+              <div className="w-full aspect-[393/562] mx-auto overflow-hidden rounded-[0.3125rem]">
                 <div role="img" className="w-full h-full bg-center bg-no-repeat bg-cover" style={{ backgroundImage: 'url("https://storage.googleapis.com/download/storage/v1/b/prd-storytodesign.appspot.com/o/h2d-ext-asset%2Fdc1bddc775055a6e27eb3631901627b7a9eb541c.jpg?generation=1780941585070626&alt=media")' }} />
               </div>
-              <div className="w-full aspect-[393/562] max-w-[393px] mx-auto overflow-hidden rounded-[0.3125rem]">
+              <div className="w-full aspect-[393/562] mx-auto overflow-hidden rounded-[0.3125rem]">
                 <div role="img" className="w-full h-full bg-center bg-no-repeat bg-cover" style={{ backgroundImage: 'url("https://storage.googleapis.com/download/storage/v1/b/prd-storytodesign.appspot.com/o/h2d-ext-asset%2F258bf25e1a385e1ce9e99f55bc55787220e607ee.jpg?generation=1780941585072222&alt=media")' }} />
               </div>
-              <div className="w-full aspect-[393/562] max-w-[393px] mx-auto overflow-hidden rounded-[0.3125rem]">
+              <div className="w-full aspect-[393/562] mx-auto overflow-hidden rounded-[0.3125rem]">
                 <div role="img" className="w-full h-full bg-center bg-no-repeat bg-cover" style={{ backgroundImage: 'url("https://storage.googleapis.com/download/storage/v1/b/prd-storytodesign.appspot.com/o/h2d-ext-asset%2F7858a62d33feb0421a1167d2775770ef4cbf4b9b.jpg?generation=1780941585225257&alt=media")' }} />
               </div>
             </div>
@@ -429,7 +429,7 @@ function CourseSection({ isMobile }: { isMobile: boolean }) {
                 Đây là buổi “mở lối” sẽ giúp bạn nhìn ra <span className="text-[rgb(236,_213,_255)]">Một ngành tưởng như “tâm linh”… Nhưng lại là cơ hội kinh doanh cực kỳ thực tế và bền vững</span>
               </h3>
               
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-[800px] mt-2 justify-items-center">
+              <div className="flex flex-wrap justify-center gap-6 w-full mt-2">
                 <div className="flex flex-col items-center text-center gap-3 w-[225px]">
                   <div className="w-[62px] h-[62px] bg-[rgb(255,_193,_7)] rounded-md shrink-0" />
                   <h5 className="text-white text-sm font-normal">Không cần vốn lớn &nbsp; Đầu tư nhiều</h5>
@@ -444,8 +444,8 @@ function CourseSection({ isMobile }: { isMobile: boolean }) {
                 </div>
               </div>
 
-              <div className="w-full max-w-[458px] h-[60px] mt-4">
-                <CTAButton text="Đăng ký miễn phí >" tone="purple" />
+              <div className="w-full max-w-[458px] mt-4">
+                <div className="h-[60px]"><CTAButton text="Đăng ký miễn phí >" tone="purple" /></div>
               </div>
             </div>
           </div>
@@ -487,7 +487,7 @@ function SignupSection({ isMobile }: { isMobile: boolean }) {
             </h3>
 
             {/* Left Card */}
-            <div className="w-full max-w-[572px] h-auto min-h-[500px] border border-[rgb(236,_213,_255)] rounded-[1.875rem] overflow-hidden relative p-6 flex flex-col gap-6 items-center">
+            <div className="w-full max-w-[572px] border border-[rgb(236,_213,_255)] rounded-[1.875rem] overflow-hidden relative p-6 flex flex-col gap-6 items-center">
               <div className="absolute inset-0 bg-origin-content bg-center bg-no-repeat bg-cover -z-10" style={{ backgroundImage: 'url("https://storage.googleapis.com/download/storage/v1/b/prd-storytodesign.appspot.com/o/h2d-ext-asset%2F770a8c53fa76d6ec95e5c0e9ad85611c671ce152.jpg?generation=1780941585098291&alt=media")' }} />
               <div className="absolute inset-0 bg-black/68 -z-10" />
               
@@ -498,10 +498,10 @@ function SignupSection({ isMobile }: { isMobile: boolean }) {
               
               <h5 className="text-white text-base font-bold text-center">Thông tin khóa học:</h5>
               
-              <div className="flex flex-col sm:flex-row gap-4 w-full justify-center mt-2 items-center">
-                <StatCard label="Thời gian" value="20h00 – 21h30" className="w-[160px]" />
-                <StatCard label="Ngày học" value="11/05/2026" className="w-[160px]" />
-                <StatCard label="Hình thức" value="Học online Zoom" className="w-[160px]" />
+              <div className="flex flex-wrap justify-center gap-3 w-full mt-2">
+                <StatCard label="Thời gian" value="20h00 – 21h30" className="w-[140px] sm:w-[160px]" />
+                <StatCard label="Ngày học" value="11/05/2026" className="w-[140px] sm:w-[160px]" />
+                <StatCard label="Hình thức" value="Học online Zoom" className="w-[140px] sm:w-[160px]" />
               </div>
             </div>
 
@@ -517,7 +517,7 @@ function SignupSection({ isMobile }: { isMobile: boolean }) {
             <div className="w-full max-w-[575px] flex flex-col gap-6 items-center">
               <h3 className="text-white text-lg sm:text-xl font-bold text-center">Đăng Ký Tham Gia Ngay</h3>
               
-              <div className="w-full max-w-[429px] bg-[rgb(95,_70,_116)] rounded-[0.625rem] p-6 flex flex-col gap-4">
+              <div className="w-full bg-[rgb(95,_70,_116)] rounded-[0.625rem] p-6 flex flex-col gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 bg-white shrink-0" />
                   <h5 className="text-white text-sm font-normal">Để lại thông tin đăng ký dưới đây</h5>
@@ -559,7 +559,6 @@ function SignupSection({ isMobile }: { isMobile: boolean }) {
 
 export default function LandingPage() {
   const baseWidth = 1200;
-  const baseHeight = 5320;
   const [viewportWidth, setViewportWidth] = useState(baseWidth);
 
   useEffect(() => {
@@ -576,28 +575,16 @@ export default function LandingPage() {
   }, []);
 
   const isDesktop = viewportWidth >= baseWidth;
-  const minReadableScale = viewportWidth < 768 ? 0.74 : 0.82;
-  const scale = isDesktop ? 1 : Math.max(viewportWidth / baseWidth, minReadableScale);
 
   return (
     <div className="min-h-screen text-black text-[12px] leading-[18px]" style={{ fontFamily: 'Roboto, sans-serif', fontFeatureSettings: '"tnum"', textDecoration: 'none' }}>
-      {isDesktop ? (
-        <div className="w-full bg-white overflow-x-hidden" style={{ fontFeatureSettings: '"tnum"' }}>
-          <HeroSection isMobile={false} />
-          <PainSection isMobile={false} />
-          <OpportunitySection isMobile={false} />
-          <CourseSection isMobile={false} />
-          <SignupSection isMobile={false} />
-        </div>
-      ) : (
-        <div className="w-full bg-white overflow-x-hidden" style={{ fontFeatureSettings: '"tnum"' }}>
-          <HeroSection isMobile={true} />
-          <PainSection isMobile={true} />
-          <OpportunitySection isMobile={true} />
-          <CourseSection isMobile={true} />
-          <SignupSection isMobile={true} />
-        </div>
-      )}
+      <div className="w-full bg-white overflow-x-hidden" style={{ fontFeatureSettings: '"tnum"' }}>
+        <HeroSection isMobile={!isDesktop} />
+        <PainSection isMobile={!isDesktop} />
+        <OpportunitySection isMobile={!isDesktop} />
+        <CourseSection isMobile={!isDesktop} />
+        <SignupSection isMobile={!isDesktop} />
+      </div>
     </div>
   );
 }
