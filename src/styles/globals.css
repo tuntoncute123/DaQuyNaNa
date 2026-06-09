@@ -148,3 +148,17 @@ font-stretch: 100%;
 unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 src: url('https://storage.googleapis.com/download/storage/v1/b/prd-storytodesign.appspot.com/o/h2d-ext-asset%2F41ca6b7e4818eb81531d8006ff7ddd971c640879.woff2?generation=1778004624505407&alt=media') format('woff2');
 }
+
+@media (max-width: 1199.98px) {
+	.mobile-readable h3,
+	.mobile-readable h5,
+	.mobile-readable span,
+	.mobile-readable div {
+		white-space: normal;
+		word-break: break-word;
+	}
+
+	.mobile-readable h5 {
+		line-height: 1.35 !important;
+	}
+}
